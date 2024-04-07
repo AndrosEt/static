@@ -1,0 +1,15 @@
+import{j as e,u as m,r as a,aP as b,a6 as y}from"./index-VVIvRZBh.js";import{H as s}from"./highcharts-RNwAsTZN.js";import{a as w,b as j,A as S,B as C,C as v,H}from"./highcharts-react.min-Kl4Av0LS.js";import{r as u}from"./server.browser-VH3XJs1z.js";import{m as F}from"./mergeRefs-97mQYrgp.js";import{m as P}from"./merge-0SZDn_cq.js";import{f as E}from"./useAutoPlay-JZxKBgmm.js";const k=({color:n,opacity:r,name:t,value:i})=>e.jsxs(O,{children:[e.jsxs(G,{children:[e.jsx(A,{style:{background:n??"{series.color}",opacity:r??"{series.opacity}"}}),t??"{series.name}"]}),e.jsx(L,{children:i??"{point.y}"})]}),O=m.div`
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: #485e75;
+`,A=m.span`
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+`,G=m.div``,L=m.div`
+  margin-left: 8px;
+`;w(s);j(s);S(s);C(s);function M(){this.renderer.image(y("https://members.helium10.com/images/new-logo/2-colors-light-bg.svg"),void 0,void 0,400,70).align({align:"center",verticalAlign:"middle",x:-200,y:-35}).css({opacity:.07}).add().toFront()}const R=a.forwardRef(({watermark:n=!1,height:r=220,options:t,onRender:i},g)=>{const{t:o,language:f}=b();a.useState(0);const l=a.useRef(null),h=a.useMemo(()=>({title:{text:""},chart:{height:r,backgroundColor:"rgb(255,255,255)",type:"line",zooming:{type:"xy"},numberFormatter:d=>E({value:d}),style:{fontFamily:"Nunito Sans"},events:{...n?{load:M}:{},render:i}},legend:{align:"center",verticalAlign:"top",x:0,y:0},tooltip:{shared:!0,useHTML:!0,backgroundColor:"rgba(255,255,255,0.95)",borderColor:"none",borderRadius:4,shadow:{color:"rgba(103, 132, 162, 0.08)",opacity:.16,offsetX:0,offsetY:4,width:20},headerFormat:u(e.jsx(v,{})),pointFormat:u(e.jsx(k,{})),padding:12},xAxis:{type:"datetime",title:{text:o("charts.time"),style:{display:"none"}},labels:{format:"{value:%b %d}",autoRotation:[-10,-20,-30,-40,-50,-60,-70,-80,-90],style:{fontSize:"12px",color:"#485e75"}}},credits:{enabled:!1},exporting:{enabled:!1,scale:1,sourceWidth:800,chartOptions:{chart:{height:r},credits:{text:"Helium10.com",href:"https://www.helium10.com/"}},buttons:{contextButton:{menuItems:["downloadCSV","downloadXLS","downloadPNG","downloadJPEG"]}}},plotOptions:{line:{dashStyle:"Solid",marker:{enabled:!1,radius:2}},series:{marker:{symbol:"circle",radius:0,lineColor:"transparent"},lineWidth:2,states:{hover:{lineWidth:2,halo:{enabled:!1,opacity:0}}}}},lang:{decimalPoint:".",thousandsSep:",",downloadCSV:o("charts.downloads.csv"),downloadXLS:o("charts.downloads.xls"),downloadPNG:o("charts.downloads.png"),downloadJPEG:o("charts.downloads.jpeg"),resetZoom:o("charts.resetZoom")}}),[r,i,o,n]);a.useEffect(()=>{var d,c,p;(p=(c=(d=l==null?void 0:l.current)==null?void 0:d.chart)==null?void 0:c.zoom)==null||p.call(c)},[t==null?void 0:t.series]);const x=a.useMemo(()=>P({},h,t),[h,t]);return e.jsx(e.Fragment,{children:e.jsx(H,{ref:F(g,l),highcharts:s,options:x},f)})}),X=Object.freeze(Object.defineProperty({__proto__:null,LineChart:R},Symbol.toStringTag,{value:"Module"}));export{k as C,R as L,X as a};
+//# sourceMappingURL=Chart-iYK8HCkW.js.map

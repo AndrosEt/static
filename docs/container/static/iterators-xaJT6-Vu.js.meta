@@ -1,0 +1,33 @@
+url: https://re-cdn.helium10.com/container/static/iterators-xaJT6-Vu.js
+parent: https://members.helium10.com/dashboard?accountId=1546707712
+method: GET
+type: Script
+
+> Origin: https://members.helium10.com
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0
+> sec-ch-ua: "HeadlessChrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+> sec-ch-ua-mobile: ?0
+> sec-ch-ua-platform: "macOS"
+> Accept: */*
+
+< date: Sun, 07 Apr 2024 13:46:01 GMT
+< content-type: text/javascript
+< access-control-allow-origin: *
+< access-control-allow-methods: GET, HEAD
+< access-control-expose-headers: x-amz-cf-id, x-amz-cf-pop, x-cache
+< access-control-max-age: 15552000
+< last-modified: Tue, 19 Mar 2024 09:06:05 GMT
+< etag: W/"eb8d41af997a4befc6c7ab57ce95a6d3"
+< x-amz-server-side-encryption: AES256
+< cache-control: max-age=31536000
+< x-cache: Miss from cloudfront
+< via: 1.1 c7d8533dd1f090a380bfdd0ea4d626c6.cloudfront.net (CloudFront)
+< x-amz-cf-pop: HKG62-C2
+< x-amz-cf-id: k8tLZqKndqmd6UadXXTfkntD6zdg7LnYMBpEdI0RxeMEt_3XRpJYZg==
+< cf-cache-status: HIT
+< age: 1658380
+< vary: Accept-Encoding
+< server: cloudflare
+< cf-ray: 870a762158e06e5e-HKG
+< content-encoding: gzip
+< alt-svc: h3=":443"; ma=86400
