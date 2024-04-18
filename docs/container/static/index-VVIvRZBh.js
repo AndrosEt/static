@@ -2482,7 +2482,7 @@ const IT = () => {
         return en({
             ...n,
             url: r,
-            withCredentials: !0,
+            // withCredentials: !0,
             headers: a
         })
     },
