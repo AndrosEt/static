@@ -39,7 +39,7 @@ function bC(e, t) {
 
     function n(r) {
         const i = {};
-        return r.integrity && (i.integrity = r.integrity), r.referrerPolicy && (i.referrerPolicy = r.referrerPolicy), r.crossOrigin === "use-credentials" ? i.credentials = "include" : r.crossOrigin === "anonymous" ? i.credentials = "omit" : i.credentials = "same-origin", i
+        return r.integrity && (i.integrity = r.integrity), r.referrerPolicy && (i.referrerPolicy = r.referrerPolicy), r.crossOrigin === "use-credentials" ? i.credentials = "same-origin" : r.crossOrigin === "anonymous" ? i.credentials = "omit" : i.credentials = "same-origin", i
     }
 
     function a(r) {
@@ -1142,7 +1142,7 @@ const _C = e => !!e.fileBlob,
             r = {
                 method: e.method,
                 ...WC(e.method || "GET", e.params || {}, e.isFormData),
-                credentials: e.withCredentials ? "include" : "same-origin",
+                credentials: "same-origin",
                 headers: BC(t, i => i !== void 0),
                 signal: e.signal
             };
