@@ -372,5 +372,5 @@ import{r as w,j as o,u as s,a as c,a1 as k,y as g,x as y,eZ as A,fU as G,E as X,
 `,Te=s.div`
   ${z};
   text-align: center;
-`,Qe=(e,t)=>{const{platform:r,domain:i}=te("store",e);return r==="AMAZON"?`https://${i}/dp/${t}`:`https://www.walmart.com/ip/name/${t}`},Ke=async(e,t)=>await se({url:le(re+"/api/v1/customers/subscription/data",{...e}),withCredentials:!0,signal:t});export{Ue as F,Ve as U,Qe as a,We as c,ue as d,Ke as g,He as u};
+`,Qe=(e,t)=>{const{platform:r,domain:i}=te("store",e);return r==="AMAZON"?`https://${i}/dp/${t}`:`https://www.walmart.com/ip/name/${t}`},Ke=async(e,t)=>await se({url:le(re+"/api/v1/customers/subscription/data",{...e}),withCredentials:0,signal:t});export{Ue as F,Ve as U,Qe as a,We as c,ue as d,Ke as g,He as u};
 //# sourceMappingURL=getUpsellData--u-Ov2M_.js.map
