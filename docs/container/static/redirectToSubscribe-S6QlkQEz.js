@@ -1,0 +1,2 @@
+import{a4 as o,a6 as t,P as a,a5 as u}from"./index-tEWTe_cM.js";const l=({key:r,action:e,queryStringParameters:n=null,additionalParameters:s={}})=>{const i=c({action:e,key:r,queryStringParameters:n,additionalParameters:s});window.location.assign(i)},c=({action:r,key:e,queryStringParameters:n={},additionalParameters:s={}})=>o.stringifyUrl({url:`${t(a)}/subscribe`,query:{accountId:u(),...r!==void 0&&{action:r},...e!==void 0&&{offer:e},...n,...s}});export{c as g,l as r};
+//# sourceMappingURL=redirectToSubscribe-S6QlkQEz.js.map

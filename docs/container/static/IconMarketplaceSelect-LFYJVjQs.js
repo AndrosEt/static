@@ -1,0 +1,13 @@
+import{at as T,a2 as $}from"./Learn-ZI4QJ8Ms.js";import{r as k,j as H,u as q,eP as w,aT as F,cE as G,eQ as Q}from"./index-tEWTe_cM.js";import{p as W,a as z}from"./MarketplaceSingleSelect-J9Q4NESj.js";function P(s,d){return s&&s.length?T(s,$(d)):[]}const J=({getChildren:s,options:d})=>{const r=[],A=(t=[])=>{for(const e of t)r.push(e),Array.isArray(s(e))&&A(s(e))};return A(d),r};var m;(function(s){s[s.ACTIVE=0]="ACTIVE",s[s.HAS_ACTIVE_CHILDREN=1]="HAS_ACTIVE_CHILDREN",s[s.NONE=2]="NONE"})(m||(m={}));const B=({value:s,itemTree:d,onChange:r,getItemByValue:A,getValue:t,getChildren:e,getChildCount:x,getPathById:a})=>{const u=k.useMemo(()=>{const l={},p=(i=[],o)=>{for(const E of i){const O=String(t(E)),b=e(E),N=o?[...o,O]:[O];l[O]=N,p(b||[],N)}};return p([...s||[],...d||[]]),l},[e,t,d,s]),S=k.useMemo(()=>(s||[]).reduce((l,p)=>{const i=t(p);return l[i]=u[i],l},{}),[t,u,s]),D=k.useCallback((l,p)=>{const i=t(l);return typeof p<"u"&&p===m.ACTIVE||u[i].find(o=>o in S)||i in S?m.ACTIVE:Object.values(S).find(o=>o==null?void 0:o.includes(String(i)))||s!=null&&s.some(o=>{var E;return(E=a==null?void 0:a(o))==null?void 0:E.includes(String(i))})?m.HAS_ACTIVE_CHILDREN:m.NONE},[a,t,S,u,s]),U=k.useCallback((l,p)=>{var R;const i=u[t(l)].map(n=>A(n));let o=[...s||[]];const E=n=>{o=o==null?void 0:o.filter(c=>t(c)!==t(n))},O=n=>{o=o.filter(c=>!n.includes(t(c)))},b=n=>{const c=J({getChildren:e,options:e(n)||[]}).map(f=>t(f));o=o.filter(f=>!c.includes(t(f))),a&&(o=o.filter(f=>!a(f).includes(t(n))))},N=n=>{o=[...o,n]},_=n=>{o=[...o,...e(n)||[]]},C=n=>i.length?t(i[i.length-1])===t(n):!1,j=n=>{var c;return(c=e(n)||[])==null?void 0:c.filter(f=>o.find(I=>t(I)===t(f))).map(f=>t(f))},L=n=>n?!!o.find(c=>t(c)===t(n)):!1;if(p===m.HAS_ACTIVE_CHILDREN){b(l),r==null||r(o);return}for(const n of i){const c=L(n),f=C(n);if(c){E(n),!f&&_(n);continue}if(f){const I=j(n),M=((R=e(n))==null?void 0:R.length)||0;if(I.length){b(n);break}else if(M>0&&x(n)!==M){_(n);break}else N(n)}}if(L(i[i.length-1])){i.pop();for(const n of i.reverse()){const c=j(n),f=x(n);if(c.length>0&&c.length===f)O(c),N(n);else break}}r==null||r(o)},[x,e,A,a,t,r,u,s]);return{itemIsActive:D,selectItem:U}},K=({value:s,placeholder:d})=>{const r=s==null?void 0:s[0];return r?H.jsx(z,{value:r==null?void 0:r.value,group:r==null?void 0:r.group}):H.jsx(G,{children:d})},X=s=>H.jsx(Q,{...s}),V=({groupOptions:s,...d})=>H.jsx(Y,{renderValue:K,renderOption:X,groups:s?W:void 0,dropdownAutoWidth:!0,...d}),Y=q(w)`
+  ${F.Control} {
+    width: auto;
+    display: inline-flex;
+    background: ${s=>s.theme.systemColors.grey100};
+    border: none;
+
+    &:hover {
+      background: ${s=>s.theme.systemColors.grey200};
+    }
+  }
+`;export{V as I,m as T,P as a,B as u};
+//# sourceMappingURL=IconMarketplaceSelect-LFYJVjQs.js.map
