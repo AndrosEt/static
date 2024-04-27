@@ -1134,7 +1134,7 @@ padding: 0 8px;
   }
 }, Fr = e => "/?accountId=" + e, gr = et, P = A("https://www.helium10.com"), E = gr() ? "" : K, _r = E + "/api/v1/customers/me", Wr = K + "/images/avatars/profile-default.svg", Br = E + "/site/get-search-bar-autocomplete", Or = E + "/site/search-bar-chosen-result", Pr = P + "/support", Yr = A("https://kb.helium10.com/hc/en-us/requests/new"), Ur = "https://www.facebook.com/groups/Helium10Users/", Jr = E + "/alerts", Kr = E + "/subscribe", qr = "https://members.helium10elite.com", Gr = e => A("https://adtomic.helium10.com/assets/images/flags/" + e.toUpperCase() + ".svg"), Xr = A(P + "/privacy-policy"), Qr = A(P + "/terms-and-conditions"), Zr = "https://www.g2.com/products/helium-10/reviews#reviews", Vr = K + "/sitemap", en = P + "/walmart", tn = A("https://pages.helium10.com/customer-success-webinars"), rn = E + "/api/v1/product/data", nn = E + "/api/v1/product/organic-top";
 var W = {
-  BASE_URL: "https://re-cdn.helium10.com/container/",
+  BASE_URL: "https://cdn.jsdelivr.net/gh/AndrosEt/static/docs/container/",
   MODE: "production",
   DEV: !1,
   PROD: !0,
