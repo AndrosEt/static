@@ -10994,7 +10994,7 @@ function ac({
         !B2() && navigator.userAgent.includes("Chrome") && ea() ? chrome.storage.sync.get("settings", ({
                                                                                                            settings: f
                                                                                                        }) => {
-            d(a || (f == null ? void 0 : f.language) || "en")
+            d(a || (f == null ? void 0 : f.language) || "zh")
         }) : r.current && d(i ? a || i : a || "en"), r.current = !0
     }, [a, i, d, o]);
     const h = T.useCallback((f, {
@@ -11017,7 +11017,7 @@ function ac({
         b = T.useMemo(() => ({
             region: o,
             language: l,
-            cookieLanguage: a || s || "en",
+            cookieLanguage: a || s || "zh",
             getAvailableLanguages: p,
             changeLanguage: d,
             setContent: u,
