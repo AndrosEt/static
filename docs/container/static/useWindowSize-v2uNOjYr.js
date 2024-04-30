@@ -1,0 +1,2 @@
+import{r as i,er as r}from"./index-3WWdADc-.js";const e=!!(typeof window<"u"&&window.document&&window.document.createElement),s=800,u=(t=s)=>{const[o,d]=i.useState({width:e?window.innerWidth:0,height:e?window==null?void 0:window.innerHeight:0}),[w]=r(o,t||0),n=i.useCallback(()=>{d({width:window.innerWidth,height:window.innerHeight})},[]);return i.useEffect(()=>(e&&window.addEventListener("resize",n),()=>{e&&window.removeEventListener("resize",n)}),[n]),w};export{u};
+//# sourceMappingURL=useWindowSize-v2uNOjYr.js.map

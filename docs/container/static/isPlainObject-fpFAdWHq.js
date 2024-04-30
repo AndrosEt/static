@@ -1,0 +1,2 @@
+import{ee as c,ef as n}from"./index-3WWdADc-.js";import{bm as a}from"./Learn-iEpSD2rS.js";var i="[object Object]",s=Function.prototype,f=Object.prototype,e=s.toString,p=f.hasOwnProperty,b=e.call(Object);function l(r){if(!c(r)||n(r)!=i)return!1;var o=a(r);if(o===null)return!0;var t=p.call(o,"constructor")&&o.constructor;return typeof t=="function"&&t instanceof t&&e.call(t)==b}export{l as i};
+//# sourceMappingURL=isPlainObject-fpFAdWHq.js.map
