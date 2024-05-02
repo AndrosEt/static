@@ -50,7 +50,7 @@ import{j as e,cA as M,u as n,aW as E,w as y,cS as R,K as H,U as L,I as q,r as i,
   }
 `,ft=n(F)`
   position: relative;
-`,g=i.createContext({tool:"cerebro",isChinese:!1,selected:[],planGroup:"free",limit:5}),jt=()=>{const t=i.useContext(g);return t.selected.length>t.limit},bt=["free","starter","gold","platinum"],v=()=>{const{planGroup:t}=i.useContext(g);return bt.includes(t)},O=()=>{const t=i.useContext(g),o=v(),s=()=>{window.open("https://members.helium10.com/subscribe?action=checkout&offer=scale_your_business","__target")},r=o?t.onUpgradePlan:void 0;return{onUpgradeNow:s,onLock:r}},w=Y`
+`,g=i.createContext({tool:"cerebro",isChinese:!1,selected:[],planGroup:"free",limit:5}),jt=()=>{const t=i.useContext(g);return t.selected.length>t.limit},bt=["free","starter","gold","platinum"],v=()=>{const{planGroup:t}=i.useContext(g);return bt.includes(t)},O=()=>{const t=i.useContext(g),o=v(),s=()=>{window.open("http://localhost:3060/subscribe?action=checkout&offer=scale_your_business","__target")},r=o?t.onUpgradePlan:void 0;return{onUpgradeNow:s,onLock:r}},w=Y`
   display: flex;
   align-items: center;
   gap: ${({theme:t})=>t.spacing.sp8};
@@ -67,5 +67,5 @@ import{j as e,cA as M,u as n,aW as E,w as y,cS as R,K as H,U as L,I as q,r as i,
   ${Q};
 `,$=n.div``,wt=({isAboveLimit:t})=>{const{limit:o,tool:s}=i.useContext(g),{t:r}=y(),[l,p]=i.useState(),[d,c]=i.useState("light"),m=v();return i.useEffect(()=>{if(m){p(e.jsx(yt,{})),c("light");return}if(t){p(e.jsx("div",{dangerouslySetInnerHTML:{__html:r("tooltip.stayUpToDateWithYourCompetitorsLimit",{limit:o})}})),c("dark");return}p(e.jsx("div",{style:{textAlign:"center"},dangerouslySetInnerHTML:{__html:r(`tooltip.stayUpToDateWithYourCompetitors.${s}`)}})),c("light")},[t,m,o,r,s]),{tooltip:l,colorType:d}},St=i.memo(t=>e.jsx(g.Provider,{value:t,children:e.jsx(Bt,{})})),Bt=()=>{var f,u;const t=i.useContext(g),{t:o}=y(),s=jt(),r=v(),{tooltip:l,colorType:p}=wt({isAboveLimit:s}),{onLock:d}=O(),c=r||((f=t.button)==null?void 0:f.locked),m=s||((u=t.button)==null?void 0:u.disabled);return t.isChinese?null:e.jsx(P,{content:l,appendTo:"parent",interactive:!0,colorType:p,...t.tooltip,children:e.jsx(Gt,{className:t.className,children:e.jsx(A,{icon:e.jsx(U,{icon:V}),buttonType:"secondary",type:"button",disabled:!c&&m,locked:c,onClick:t.onClick,onLockedClick:d,className:t.className,...t.button,children:o("buttons.trackCompetitors")})})})},A=n(F)``,It=Object.assign(St,{Button:A}),Gt=n.div`
   width: fit-content;
-`,Ft=({selected:t,marketplace:o,trackEvent:s,tool:r})=>i.useCallback(()=>{s==null||s();const l=X("https://members.helium10.com/dashboard",{marketplace:o,competitors:t,tool:r},{arrayFormat:"index"});window.open(l,"_blank")},[o,t,r,s]);export{Nt as G,It as T,Ft as u};
+`,Ft=({selected:t,marketplace:o,trackEvent:s,tool:r})=>i.useCallback(()=>{s==null||s();const l=X("http://localhost:3060/dashboard",{marketplace:o,competitors:t,tool:r},{arrayFormat:"index"});window.open(l,"_blank")},[o,t,r,s]);export{Nt as G,It as T,Ft as u};
 //# sourceMappingURL=useTrackCompetitorsOnClick-f8lbvtb_.js.map
