@@ -1,6 +1,6 @@
 const frontendBundleVersion = "3.4.32";
 
-const pathToBundle = "https://re-cdn.helium10.com/common/lib/" + frontendBundleVersion;
+const pathToBundle = "https://cdn.jsdelivr.net/gh/AndrosEt/static/docs/container/static/common/lib/" + frontendBundleVersion;
 
 window.pathToBundle = pathToBundle;
 
