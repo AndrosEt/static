@@ -384,7 +384,7 @@ function Qt(e) {
 function le() {
   return new RegExp(/bot|crawler|spider|crawling/i, "i").test(navigator.userAgent);
 }
-const et = "helium10.com", ve = "h10.com.cn", Xt = () => window.location.hostname.includes("helium10-dev.com") || window.location.hostname.includes("helium-dev.com") || !(window.location.host.includes("adtomic.stg") || window.location.host.includes("native-re-adtomic-stg")) && window.location.host.includes(".stg.helium10.com") || window.location.host === "h10mail.com", tt = window.location.hostname.includes(ve), nt = (e) => tt ? e.replace(et, ve) : e, rt = window.location.hostname.includes("helium-dev.com") || window.location.hostname.includes("ci.helium10-dev.com"), ce = nt(rt ? window.location.origin : "https://members.helium10.com"), at = "/api/v1/site/token", ot = "/user/signin", $ = "CORE_BEARER_TOKEN", L = "CURRENT_ACCOUNT_ID", xe = (e) => {
+const et = "helium10.com", ve = "h10.com.cn", Xt = () => window.location.hostname.includes("helium10-dev.com") || window.location.hostname.includes("helium-dev.com") || !(window.location.host.includes("adtomic.stg") || window.location.host.includes("native-re-adtomic-stg")) && window.location.host.includes(".stg.helium10.com") || window.location.host === "h10mail.com", tt = window.location.hostname.includes(ve), nt = (e) => tt ? e.replace(et, ve) : e, rt = window.location.hostname.includes("helium-dev.com") || window.location.hostname.includes("ci.helium10-dev.com"), ce = nt(rt ? window.location.origin : "http://localhost:3060"), at = "/api/v1/site/token", ot = "/user/signin", $ = "CORE_BEARER_TOKEN", L = "CURRENT_ACCOUNT_ID", xe = (e) => {
   B() ? chrome.storage.local.set({ [$]: e }) : localStorage.setItem($, e);
 }, Ae = () => B() ? new Promise((e) => {
   var t, n;
